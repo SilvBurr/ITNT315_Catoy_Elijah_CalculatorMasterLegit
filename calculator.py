@@ -17,6 +17,11 @@ def get_two_numbers():
             print("Invalid input. Please enter numeric values only.\n")
 
 
+def add(a, b):
+    """Return the sum of two numbers."""
+    return a + b
+
+
 def show_menu():
     print("\n===== Calculator Master =====")
     print("1. Addition")
@@ -35,7 +40,10 @@ def main():
         if choice == "5":
             print("Goodbye!")
             break
-        elif choice in ("1", "2", "3", "4"):
+        elif choice == "1":
+            a, b = get_two_numbers()
+            print(f"Result: {add(a, b)}")
+        elif choice in ("2", "3", "4"):
             # Placeholder: real operations are added on their own
             # feature branches and merged in here later.
             print("This operation has not been implemented yet.")
