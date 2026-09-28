@@ -56,7 +56,11 @@ def main():
         elif choice == "2":
             a, b = get_two_numbers()
             print(f"Result: {subtract(a, b)}")
-        elif choice in ("3", "4"):
+        elif choice == "3":
+            a, b = get_two_numbers()
+            print(f"Result: {multiply(a, b)}")
+        elif choice == "4":
+            print("This operation has not been implemented yet.")
             # Placeholder: real operations are added on their own
             # feature branches and merged in here later.
             print("This operation has not been implemented yet.")
