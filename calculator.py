@@ -32,6 +32,13 @@ def multiply(a, b):
     return a * b
 
 
+def divide(a, b):
+    """Return a divided by b, or None if b is zero."""
+    if b == 0:
+        return None
+    return a / b
+
+
 def show_menu():
     print("\n===== Calculator Master =====")
     print("1. Addition")
@@ -60,7 +67,12 @@ def main():
             a, b = get_two_numbers()
             print(f"Result: {multiply(a, b)}")
         elif choice == "4":
-            print("This operation has not been implemented yet.")
+            a, b = get_two_numbers()
+            result = divide(a, b)
+            if result is None:
+                print("Error: Division by zero is not allowed.")
+            else:
+                print(f"Result: {result}")
             # Placeholder: real operations are added on their own
             # feature branches and merged in here later.
             print("This operation has not been implemented yet.")
