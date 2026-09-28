@@ -17,6 +17,11 @@ def get_two_numbers():
             print("Invalid input. Please enter numeric values only.\n")
 
 
+def add(a, b):
+    """Return the sum of two numbers."""
+    return a + b
+
+
 def show_menu():
     print("\n===== Calculator Master =====")
     print("1. Addition")
