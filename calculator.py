@@ -32,6 +32,13 @@ def multiply(a, b):
     return a * b
 
 
+def divide(a, b):
+    """Return a divided by b, or None if b is zero."""
+    if b == 0:
+        return None
+    return a / b
+
+
 def show_menu():
     print("\n===== Calculator Master =====")
     print("1. Addition")
